@@ -1,0 +1,43 @@
+.header {
+    display: flex;
+    flex-direction: column;
+    background-color: #d0d7de;
+    margin-bottom: 10px;
+}
+
+.logo {
+    text-align: right;
+}
+
+.navLinks {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    gap: 10%;
+    
+}
+
+.navLinks li {
+    font-size: 1.2rem;
+    position: relative;
+}
+
+.navLinks li a {
+    color: black;
+    text-decoration: none;
+}
+
+/* Style for the active link (underline) */
+.navLinks li.active {
+    ::after {
+            content: '';
+            display: block;
+            position: absolute;
+            width: 100%;
+            height: 2px;
+            background-color: orange;
+            /* Change this color as needed */
+            bottom: 0;
+            left: 0;
+        }
+}

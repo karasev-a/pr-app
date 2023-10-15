@@ -1,0 +1,163 @@
+// _reset.scss
+
+/* Box sizing rules */
+html {
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+/* Remove default margin */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+    margin: 0;
+}
+
+/* Reset typography to ensure consistent font styles */
+body {
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* Remove list styles (bullets/numbers) */
+ul,
+ol {
+    list-style: none;
+}
+
+/* Remove default padding */
+ul,
+ol,
+li,
+figure,
+blockquote,
+dl,
+dd {
+    padding: 0;
+}
+
+/* Remove border and outline on all elements */
+a,
+button,
+input,
+textarea,
+select {
+    border: none;
+    outline: none;
+}
+
+/* Remove background and border on images */
+img {
+    background: none;
+    border: none;
+}
+
+/* Remove extra space and alignment issues in inline and inline-block elements */
+a,
+button,
+input,
+textarea,
+select,
+img {
+    vertical-align: middle;
+}
+
+/* Standardize default form styles */
+button,
+input,
+optgroup,
+select,
+textarea {
+    font: inherit;
+    margin: 0;
+    color: inherit;
+}
+
+/* Remove default button styles */
+button {
+    background: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+/* Prevent text selection and cursor change on non-selectable elements */
+[draggable],
+a,
+button,
+input,
+textarea,
+select {
+    user-select: none;
+    cursor: default;
+}
+
+/* Remove default table border */
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* Reset blockquote styling to match paragraph */
+blockquote {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after {
+    content: '';
+    content: none;
+}
+
+/* Reset HTML5 elements to display: block for consistent rendering */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+main,
+nav,
+section,
+summary {
+    display: block;
+}
+
+/* Remove default styles on HTML5 audio and video elements */
+audio,
+video {
+    display: inline-block;
+}
+
+/* Reset hidden attribute styles */
+[hidden] {
+    display: none;
+}
+
+/* Reset scrollbar styles */
+body::-webkit-scrollbar {
+    width: 12px;
+}
+
+body::-webkit-scrollbar-thumb {
+    background-color: #888;
+}
+
+body::-webkit-scrollbar-track {
+    background-color: #f1f1f1;
+}
+
+/* Add more custom reset styles if necessary */
