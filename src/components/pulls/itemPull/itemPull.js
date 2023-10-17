@@ -5,9 +5,14 @@ const ItemPull = ({ pull }) => {
 
   return (
     <div className={styles.itemPull}>
-      <p className={styles.name}>{title}</p>
-      <p className={styles.author}>{user.login}</p>
-      <p className={styles.comments}>{commentsNumber}</p>
+      <div className={styles.name}>{title}</div>
+      <div className={styles.author}>{user.login}</div>
+      {commentsNumber > 0 ? (
+        <div className={styles.comments}>
+          <img src="/message.svg" alt="Message icon" className={styles.icon} />
+          {commentsNumber}
+        </div>
+      ) : null}
     </div>
   );
 };
