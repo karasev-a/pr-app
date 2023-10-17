@@ -1,8 +1,19 @@
 .header {
     display: flex;
     flex-direction: column;
-    background-color: #d0d7de;
+    background-color: #d0d6de;
     margin-bottom: 10px;
+    padding: 10px 10px 0;
+}
+
+.topHeader {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    img {
+        border-radius: 50%;
+    }
 }
 
 .logo {
@@ -13,7 +24,7 @@
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-    gap: 10%;
+    column-gap: 10%;
     
 }
 

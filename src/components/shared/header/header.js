@@ -2,7 +2,6 @@ import Link from "next/link";
 import Image from "next/image";
 import { useRouter } from "next/router";
 
-import utilStyles from "@/styles/utils.module.scss";
 import styles from "./header.module.scss";
 
 const Header = ({ name }) => {
@@ -10,24 +9,21 @@ const Header = ({ name }) => {
 
   return (
     <header className={styles.header}>
-      <>
-        <Link href="/">
-          <Image
-            priority
-            src="/images/profile.jpg"
-            className={utilStyles.borderCircle}
-            height={108}
-            width={108}
-            alt=""
-          />
-        </Link>
-        <h2 className={utilStyles.headingLg}>
-          <Link href="/" className={utilStyles.colorInherit}>
-            {name}
+      <div className={styles.topHeader}>
+        <p>facebook / react</p>
+        <p>
+          <Link href="/">
+            <Image
+              priority
+              src="/images/profile.jpg"
+              height={30}
+              width={30}
+              alt=""
+            />
           </Link>
-        </h2>
-      </>
-      <div>
+        </p>
+      </div>
+      <div className={styles.bottomHeader}>
         <ul className={styles.navLinks}>
           <li className={router.asPath == "/" ? styles.active : ""}>
             <Link href="/">
