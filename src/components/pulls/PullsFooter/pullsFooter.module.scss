@@ -1,0 +1,25 @@
+.pullsFooter {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+
+
+    button {
+        display: inline-block;
+        padding: 10px 20px;
+        background-color: #0969da;
+        color: white;
+        text-align: center;
+        text-decoration: none;
+        font-size: 16px;
+        border-radius: 5px;
+        cursor: pointer;
+    
+        &:hover {
+            background-color: white;
+            color: #0969da;
+        }
+    }
+}
